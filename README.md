@@ -5,3 +5,15 @@
 <div align="center">
     <h2>MongoDB + Kotlin basic CRUD.</h2>
 </div>
+
+## Routing:
+
+### Account Controller:
+
+| Route               | Job                                       | Method |
+| ------------------- | ------------------------------------------| ------ |
+| /account            | Retrieve all user accounts                | GET    |
+| /account            | Create a new account                      | POST   |
+| /account/:id        | Retrieve an unique account by id          | GET    |
+| /account/:id        | Delete an unique account by id            | DELETE |
+| /account/:id/       | Update a account status by document id    | PUT    |

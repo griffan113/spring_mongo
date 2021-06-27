@@ -39,4 +39,16 @@ public class AccountController(val repository: AccountRepository) {
 
         return ResponseEntity.ok(save);
     }
+
+    @DeleteMapping("{id}")
+    public fun deleteById(
+        @PathVariable id: String,
+    ): ResponseEntity<Account> {
+        val findAccount = repository.findById(id);
+        val accountDB = findAccount.orElseThrow { ChangeSetPersister.NotFoundException() };
+
+        repository.delete(accountDB);
+
+        return ResponseEntity.ok(accountDB);
+    }
 }
