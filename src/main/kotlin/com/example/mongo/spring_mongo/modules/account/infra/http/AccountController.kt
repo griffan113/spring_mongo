@@ -1,5 +1,7 @@
-package com.example.mongo.spring_mongo
+package com.example.mongo.spring_mongo.modules.account.infra.http
 
+import com.example.mongo.spring_mongo.IAccountRepository
+import com.example.mongo.spring_mongo.modules.account.infra.orm.entities.Account
 import org.springframework.data.crossstore.ChangeSetPersister
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Controller

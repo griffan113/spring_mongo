@@ -1,4 +1,4 @@
-package com.example.mongo.spring_mongo
+package com.example.mongo.spring_mongo.shared
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
